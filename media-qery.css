@@ -1,0 +1,107 @@
+@import url(theme.css);
+* {
+    box-sizing: border-box;
+    font-weight: 500;
+    margin: 0;
+    font-family: var(--ff-monteserrat: 'Montserrat', sans-serif;);
+}
+body{
+    background-color: var(--mavi-9 );
+    color: var(--siyah);
+    margin: 1rem;
+}
+h1{
+    background-color: var(--koyu-kırmızı);
+    width: 20rem;
+    padding: 0.3rem;
+    margin: 2rem   auto;
+    border: 1px solid black;
+    border-radius: 30px;
+    border-radius: 20rem;
+    text-align: center;
+}
+.header{
+    background-color:var(--koyu-yeşil);
+    padding: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.navbar{
+    background-color: var(--gri-3);
+    display: flex;
+    justify-content: flex-start;
+    color: var();
+    
+}
+.navbar a{
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    color: var(--beyaz)
+}
+.navbar a:hover{
+    background-color: var(--gri-7);
+    color: black;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+}
+.col{
+    padding: 1rem;
+}
+
+.fs{
+    background-color: var(--gri-5);
+    width: 35%;
+}
+.ds{
+    background-color: var(--gri-7);
+    width: 30%;
+}
+.aws{
+    background-color: var(--gri-6);
+    width: 20%;
+
+}
+.cms{
+    background-color: var(--gri-8);
+    width: 15%;
+}
+@media screen  and (max-width:922px){
+    body{
+        background-color: var(--açık-kırmızı);
+        color: var(--beyaz);
+    }
+    .col{
+        width: 50%;
+        margin: 0.5;
+    }
+}
+@media screen  and (max-width:600px){
+    body{
+        background-color: var(--mor-1);
+        color: var(--beyaz);
+    }
+    .header{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a:hover{
+        width: 100%;
+        text-align: center;
+    }
+  
+    .col{
+        width: 100%;
+        margin: 0.5 0;
+    }
+}
+
